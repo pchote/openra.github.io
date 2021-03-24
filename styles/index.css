@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* This website uses Sass to compile a stylesheet based on this file Other styles are imported from the _sass directory */
 /* Fonts */
-@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/inter/inter-400.woff2?v=3.13") format("woff2"), url("/fonts/inter/inter-400.woff?v=3.13") format("woff"); }
-@font-face { font-family: 'Inter'; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/inter/inter-400-italic.woff2?v=3.13") format("woff2"), url("/fonts/inter/inter-400-italic.woff?v=3.13") format("woff"); }
-@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/inter/inter-600.woff2?v=3.13") format("woff2"), url("/fonts/inter/inter-600.woff?v=3.13") format("woff"); }
-@font-face { font-family: 'Inter'; font-style: italic; font-weight: 600; font-display: swap; src: url("/fonts/inter/inter-600-italic.woff2?v=3.13") format("woff2"), url("/fonts/inter/inter-600-italic.woff?v=3.13") format("woff"); }
-@font-face { font-family: 'Jost'; src: url("/fonts/jost/jost-600.woff2") format("woff2"), url("/fonts/jost/jost-600.woff") format("woff"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url("openra.github.io/fonts/inter/inter-400.woff2?v=3.13") format("woff2"), url("openra.github.io/fonts/inter/inter-400.woff?v=3.13") format("woff"); }
+@font-face { font-family: 'Inter'; font-style: italic; font-weight: 400; font-display: swap; src: url("openra.github.io/fonts/inter/inter-400-italic.woff2?v=3.13") format("woff2"), url("openra.github.io/fonts/inter/inter-400-italic.woff?v=3.13") format("woff"); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url("openra.github.io/fonts/inter/inter-600.woff2?v=3.13") format("woff2"), url("openra.github.io/fonts/inter/inter-600.woff?v=3.13") format("woff"); }
+@font-face { font-family: 'Inter'; font-style: italic; font-weight: 600; font-display: swap; src: url("openra.github.io/fonts/inter/inter-600-italic.woff2?v=3.13") format("woff2"), url("openra.github.io/fonts/inter/inter-600-italic.woff?v=3.13") format("woff"); }
+@font-face { font-family: 'Jost'; src: url("openra.github.io/fonts/jost/jost-600.woff2") format("woff2"), url("openra.github.io/fonts/jost/jost-600.woff") format("woff"); font-weight: 600; font-style: normal; font-display: swap; }
 .color--gold, .site-section__heading { background-image: repeating-linear-gradient(135deg, #ffdd9b 0, #fed792 20px, #ffe1ac 40px, white 70px, #fac66b 125px, #f6c26b 160px, #e7b155 175px, #f4c16b 185px, #f1bf6b 220px, #f3be66 235px, #e9b153 250px, #f5be61 280px, #f9bc56 305px, #fffbf5 385px, #fcc362 415px, #fcc379 450px, #ffdd9b 500px); background-clip: text; background-repeat: repeat; background-size: 500px 500px; background-position: center center; -webkit-background-clip: text; color: #ffdd9b; -webkit-text-fill-color: transparent; }
 
 .table--metal-panel thead th, .u-light-zone, .dark-panel__header, .home__developer-updates__posts__header { background-color: #cdcdcf; background-image: repeating-linear-gradient(0deg, #bdbdbf 0, #e1e1e3 3px); background-size: 1px 3px; box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px, inset 0 1px 1px rgba(0, 0, 0, 0.25); color: #1b1a1e; text-shadow: none; }
@@ -15,7 +15,7 @@
 
 @keyframes selectionBox { 0% { top: -5px; right: -5px; bottom: -5px; left: -5px; }
   100% { top: -2px; right: -2px; bottom: -2px; left: -2px; } }
-a:focus:before, button:focus:before, .button:focus:before, button:focus-within:before, .button:focus-within:before, .site-header a:hover:before, .site-footer a:hover:before { content: ''; position: absolute; top: -2px; right: -2px; bottom: -2px; left: -2px; border: rgba(255, 255, 255, 0.01) 8px solid; border-image: url("/images/selection-box.svg") 8 8 8 8; border-image-width: 8px; animation: selectionBox 0.75s infinite; }
+a:focus:before, button:focus:before, .button:focus:before, button:focus-within:before, .button:focus-within:before, .site-header a:hover:before, .site-footer a:hover:before { content: ''; position: absolute; top: -2px; right: -2px; bottom: -2px; left: -2px; border: rgba(255, 255, 255, 0.01) 8px solid; border-image: url("openra.github.io/images/selection-box.svg") 8 8 8 8; border-image-width: 8px; animation: selectionBox 0.75s infinite; }
 @media (prefers-reduced-motion) { a:focus:before, button:focus:before, .button:focus:before, button:focus-within:before, .button:focus-within:before, .site-header a:hover:before, .site-footer a:hover:before { animation: none; } }
 
 /* General Styles Styles of base elements */
@@ -30,9 +30,9 @@ a:focus, button:focus, .button:focus, button:focus-within, .button:focus-within 
 html, body { font-family: 'Inter', sans-serif; font-variant-numeric: slashed-zero; font-size: 16px; line-height: 170%; color: #e6e6e6; text-shadow: black 0 2px 0; }
 @media screen and (max-width: 680px) { html, body { font-size: 14px; } }
 
-html { background-color: #29282d; background-image: url("/images/bg-texture.jpg"); background-size: 600px 600px; }
+html { background-color: #29282d; background-image: url("openra.github.io/images/bg-texture.jpg"); background-size: 600px 600px; }
 
-body { background-position-y: -60px; background-image: url("/images/bg-logos.png"); }
+body { background-position-y: -60px; background-image: url("openra.github.io/images/bg-logos.png"); }
 
 h1, h2, h3, h4, h5, h6 { line-height: 125%; font-family: 'Jost', Futura, sans-serif; color: white; margin: 1.5rem 0 1rem 0; text-shadow: none; }
 
@@ -344,7 +344,7 @@ input.radio-button__input { margin-top: 0.75rem; margin-right: 0; margin-bottom:
 .site-header__social-nav .social-link__text { text-indent: -3000px; color: transparent; }
 
 .site-section { flex-grow: 1; display: flex; justify-content: center; align-items: stretch; margin-top: 3rem; margin-bottom: 3rem; }
-.site-section:before, .site-section:after { content: ''; display: block; flex-grow: 1; flex-shrink: 1; z-index: 500; margin-top: -3rem; margin-bottom: -3rem; background-image: url("/images/bg-disallowed.png"); }
+.site-section:before, .site-section:after { content: ''; display: block; flex-grow: 1; flex-shrink: 1; z-index: 500; margin-top: -3rem; margin-bottom: -3rem; background-image: url("openra.github.io/images/bg-disallowed.png"); }
 .site-section:before { transform: translateX(-75px); }
 .site-section:after { transform: translateX(75px); }
 .site-section h1:first-child, .site-section h2:first-child, .site-section h3:first-child, .site-section h4:first-child, .site-section h5:first-child, .site-section h6:first-child { margin-top: 0; }
